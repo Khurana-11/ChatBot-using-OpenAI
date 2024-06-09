@@ -5,6 +5,7 @@ import CustomizedInput from "../components/shared/CustomizedInput";
 import { toast } from "react-hot-toast";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+
 const Login = () => {
   const navigate = useNavigate();
   const auth = useAuth();
@@ -82,7 +83,7 @@ const Login = () => {
                   color: "black",
                 },
               }}
-              endIcon={<IoIosLogIn />}
+              endIcon={<IoIosLogIn />}             //might want to remove this to get the inden correct
             >
               Login
             </Button>
